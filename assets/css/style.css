@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 0.1px;
+}
+
+/* Navbar */
+
+nav {
+  height: 11vh;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  /* background-color: red; */
+}
+
+nav h1 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monument;
+  font-size: 45px;
+  letter-spacing: -1px;
+  /* background-color: blue; */
+}
+
+nav h2 {
+  height: 100%;
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #000;
+  font-size: 28px;
+  font-weight: 500;
+  /* background-color: blue; */
+}
+
+nav h2:nth-last-child(2) {
+  width: 29%;
+  /* background-color: red; */
+}
+
+nav h2:nth-last-child(1) {
+  width: 10%;
+  /* background-color: red; */
+}
+
+/* header  */
+
+header {
+  height: 90%;
+  width: 100%;
+  padding: 4vw;
+  position: relative;
+  /* background-color: red; */
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* background-color: blue; */
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  height: 52%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+  color: #fff;
+  /* background-color: rgb(0, 0, 0, 0.154);
+  backdrop-filter: blur(1px); */
+}
+
+#over1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2vw;
+}
+
+#over1 h1 {
+  font-size: 3.6vw;
+  font-family: monument;
+  /* mix-blend-mode: difference; */
+}
+
+#over1 h2 {
+  font-size: 1vw;
+  padding: 2vw 2.2vw;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  /* background-color: blue; */
+}
+
+#over2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #fff;
+  padding: 1.5vw 0vw;
+}
+
+#over2 h4 {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+#over2 img {
+  height: 3vw;
+}
+
+#scroll {
+  height: 40vh;
+  width: 100%;
+  padding: 1vw;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* background-color: red; */
+}
+
+.container {
+  height: 100%;
+  width: 110%;
+  display: inline-block;
+  padding: 2vw;
+  animation: autoscroll 10s linear infinite;
+  /* background-color: blue; */
+}
+
+#scroll img {
+  height: 110%;
+  width: 15.3%;
+  object-fit: cover;
+  object-position: 30% 30%;
+  border-radius: 50%;
+  margin: 1vw;
+  /* display: none; */
+}
+
+@keyframes autoscroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#alphabet {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-top: 3vw;
+  /* background-color: red; */
+}
+
+#alphabet h5 {
+  text-transform: uppercase;
+  font-size: 1.7vw;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px solid #000;
+  letter-spacing: 4px;
+  margin-right: 2vw;
+  cursor: pointer;
+}
+
+#alphabet h6 {
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4px;
+  padding: 0.5vw 0.7vw;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #00000000;
+  transition: all ease 0.2s;
+
+  /* background-color: yellow; */
+}
+#alphabet h6:hover {
+  border: 2px solid #000000;
+}
+
+#page2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw 5vw;
+}
+
+#page2-page1 {
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+}
+
+#page2-page1 img {
+  height: 95%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 30% 20%;
+}
+#page2-page1 h1 {
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  font-family: monument;
+}
+#page2-page2 {
+  height: 100%;
+  width: 46%;
+}
+
+#page2-page2 img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#page2-info {
+  height: 27vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+#page2-info h6 {
+  height: 100%;
+  width: 50%;
+  font-size: 1.5vw;
+  line-height: 1.7vw;
+  padding: 2vw;
+  font-family: monument;
+  text-align: start;
+  letter-spacing: 0.1vw;
+  /* background-color: blue; */
+}
+
+#page2-info p {
+  height: 100%;
+  width: 50%;
+  padding: 2vw;
+  font-size: 1vw;
+  line-height: 1.2vw;
+  text-align: start;
+}
+
+#page3 {
+  height: 100%;
+  width: 100%;
+  padding: 2vw 5vw;
+  /* background-color: red; */
+}
+
+#page3-info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  /* background-color: green; */
+}
+
+#page3-info-p1 #circle-text {
+  height: 60%;
+  width: 90%;
+  margin-bottom: 6vw;
+  mix-blend-mode: color-burn;
+  animation: rotation 20s linear infinite;
+  /* background-color: blue; */
+}
+
+#page3-info-p1 #arrow {
+  position: absolute;
+  top: 15vw;
+}
+
+#page3-info-p1 {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+#page3-info-p1 h6 {
+  width: 50%;
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.5vw;
+  letter-spacing: 0.1vw;
+  /* background-color: red; */
+}
+
+#page3-info-p2 {
+  height: 100%;
+  width: 55%;
+  padding: 2vw 5vw;
+  /* background-color: yellowgreen; */
+}
+
+#page3-info-p2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#page4 {
+  height: 100%;
+  width: 100%;
+  padding: 2vw 5vw;
+  /* background-color: yellowgreen; */
+}
+
+#page4 img {
+  height: 100%;
+  width: 100%;
+  object-position: cover;
+  object-position: top;
+  /* padding: 2vw 5vw; */
+  /* background-color: red; */
+}
+
+@keyframes rotation {
+  form {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
