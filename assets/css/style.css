@@ -693,11 +693,28 @@ footer h1::before {
   right: 17%;
 }
 
-footer h2 {
+footer > h2 {
   height: 100%;
   width: 22%;
   border-right: 2px solid #000;
   font-size: 28px;
   font-weight: 500;
+  padding-top: 1vw;
+  /* background-color: red; */
 }
 
+#footer-2 {
+  height: 100%;
+  width: 26%;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+#icon {
+  display: flex;
+}
